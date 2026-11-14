@@ -1,0 +1,145 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Feliz cumpleaños (tarde), Joaquín</title>
+<style>
+  :root{--bg:#0b0b10;--card:#14141c;--red:#ff3b3b;--gold:#ffd23f;--txt:#ecebf3;--mut:#9a98ab;--green:#3bff8a}
+  *{box-sizing:border-box;margin:0}
+  body{background:var(--bg);color:var(--txt);font-family:'Segoe UI',system-ui,sans-serif;line-height:1.55;overflow-x:hidden}
+  body::before{content:"";position:fixed;inset:0;background:radial-gradient(circle at 20% 0%,#3a0a0a55,transparent 50%),radial-gradient(circle at 90% 90%,#2a1a5a44,transparent 50%);pointer-events:none}
+  /* Fondo: la misma imagen repetida en mosaico. Pon tu foto como "fondo.jpg" junto a index.html */
+  body::after{content:"";position:fixed;inset:-50%;z-index:-1;background:url('fondo.jpg') 0 0/140px 140px repeat;opacity:.25;transform:rotate(-8deg);animation:drift 40s linear infinite;pointer-events:none}
+  @keyframes drift{to{background-position:140px 140px}}
+  main{max-width:820px;margin:0 auto;padding:32px 18px 80px;position:relative}
+  .tag{font-family:monospace;color:var(--red);letter-spacing:.15em;font-size:.8rem}
+  h1{font-size:clamp(2.2rem,8vw,4.2rem);line-height:1.05;margin:10px 0;text-transform:uppercase}
+  h1 span{color:var(--gold)}
+  h1 s{color:var(--red);text-decoration-thickness:5px}
+  .sub{color:var(--mut);font-size:1.1rem}
+  section{background:var(--card);border:1px solid #26263a;border-radius:14px;padding:22px;margin-top:26px}
+  h2{font-size:1.3rem;margin-bottom:10px;color:var(--gold)}
+  .big{font-size:clamp(3rem,14vw,6rem);font-weight:900;color:var(--red);line-height:1;font-variant-numeric:tabular-nums}
+  .bar{height:22px;background:#222233;border-radius:99px;overflow:hidden;margin:12px 0 6px}
+  .bar i{display:block;height:100%;width:7%;background:linear-gradient(90deg,var(--red),var(--gold));animation:stuck 3s infinite}
+  @keyframes stuck{0%,60%{width:7%}70%{width:7.3%}100%{width:7%}}
+  pre{background:#07070b;border-radius:10px;padding:14px;overflow:auto;font-size:.85rem;color:var(--green);border:1px solid #1e1e2c}
+  pre .e{color:var(--red)}
+  .grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:12px;margin-top:12px}
+  .gift{background:#0f0f17;border:1px dashed #3a3a55;border-radius:10px;padding:14px;font-size:.95rem}
+  .gift b{display:block;color:var(--gold);margin-bottom:4px}
+  button{font:inherit;font-weight:800;border:0;border-radius:10px;padding:14px 22px;background:var(--red);color:#fff;cursor:pointer}
+  #run{position:relative;margin-top:14px}
+  #msg{margin-top:14px;min-height:3em;color:var(--mut)}
+  footer{text-align:center;color:var(--mut);margin-top:40px;font-size:.85rem}
+  .conf{position:fixed;top:-20px;font-size:1.6rem;animation:fall linear forwards;pointer-events:none;z-index:9}
+  @keyframes fall{to{transform:translateY(110vh) rotate(540deg)}}
+</style>
+</head>
+<body>
+<main>
+  <div class="tag">// ERROR 404: FECHA NO RECORDADA</div>
+  <h1>Feliz cumpleaños, <span>Joaquín Cusicanqui</span> <s>(7 de noviembre)</s></h1>
+  <p class="sub">Sí, ya sabemos. Llegamos tarde. Pero tú también llegas tarde a todo lo que no sea farmear, así que estamos a mano.</p>
+
+  <section>
+    <h2>⏱️ Días de retraso oficiales</h2>
+    <div class="big" id="days">…</div>
+    <p class="sub">días desde que cumpliste años y ninguno de tus "amigos" dijo nada. Un récord que ni tu K'Sante aguanta de tanky que es.</p>
+  </section>
+
+  <section>
+    <h2>📉 Progreso de nuestra felicitación</h2>
+    <div class="bar"><i></i></div>
+    <p class="sub">7% — Estancado desde el 7 de noviembre. Se está intentando cargar el recuerdo.</p>
+  </section>
+
+  <section>
+    <h2>🔒 Diagnóstico técnico: Deadlock</h2>
+    <p class="sub">Eres fan de <b>Deadlock</b>, el juego de Valve. Y en programación, un <i>deadlock</i> es cuando dos procesos se esperan el uno al otro para siempre. O sea: tú esperando que te saludemos, y nosotros esperando acordarnos. Lo tuyo es un deadlock en vida real.</p>
+    <pre>$ ./felicitar_a_joaquin
+[proceso A] esperando que alguien recuerde la fecha...
+[proceso B] esperando que A recuerde la fecha...
+<span class="e">DEADLOCK DETECTADO. Doom inevitable.</span>
+[+6 dias] timeout… abortando… reintentando…
+<span class="e">cumpleaños 7/nov: NO ENCONTRADO</span>
+[OK] felicitación enviada con retraso. Disculpe las molestias.</pre>
+    <p class="sub" style="margin-top:12px">Un juego de Valve, la empresa que sabe de llegar tarde a todo. Con razón nos entiendes: tu cumple pasó a "mantenimiento" y nadie avisó.</p>
+  </section>
+
+  <section>
+    <h2>💀 Doom: rip and tear (tu cumpleaños)</h2>
+    <p class="sub">También te gusta <b>Doom</b>, un juego donde destrozas demonios con una escopeta, pero a tus amigos no les destrozaste ni el recordatorio del calendario. Tu cumpleaños fue en modo Pesadilla: nadie sobrevivió con la memoria intacta.</p>
+    <pre>> DOOM: nivel "Cumpleaños de Joaquín"
+<span class="e">Dificultad: Ultra-Violencia (amigos olvidadizos)</span>
+Vida: 100 | Armadura: 0 | Memoria: 0
+Mensaje: "Te olvidaron, Doomguy."</pre>
+  </section>
+
+  <section>
+    <h2>🛡️ K'Sante, el espejo de tu alma</h2>
+    <p class="sub">Eres fan de K'Sante: un negro maricon con el que seguro fantaseas, pega lento y siempre llega tarde a la pele. Qué casualidad: nosotros llegamos tarde a tu cumpleaños, y tú ni te enteraste hasta que lo viste en esta página. Mucha resistencia, poco DPS emocional.</p>
+    <div class="grid">
+      <div class="gift"><b>Pasiva</b>Esperar un saludo que nunca llega.</div>
+      <div class="gift"><b>Ulti</b>Entrar al cumpleaños siete días después, sin invitación.</div>
+      <div class="gift"><b>Debilidad</b>Amigos con memoria de pez.</div>
+    </div>
+  </section>
+
+  <section>
+    <h2>🎁 Regalos que sí te mereces</h2>
+    <div class="grid">
+      <div class="gift"><b>Un calendario</b>Para ti, para nosotros, para todos.</div>
+      <div class="gift"><b>Un reintento</b>Ya que tu cumpleaños también hizo timeout.</div>
+      <div class="gift"><b>Este sitio web</b>Hecho con amor, sarcasmo y 6 días de culpa. </div>
+    </div>
+  </section>
+
+  <section>
+    <h2>🎉 Aceptas nuestras disculpas?</h2>
+    <button id="yes">Sí, los perdono</button>
+    <button id="run">No...</button>
+    <div id="msg"></div>
+  </section>
+
+  <footer>Hecho con cariño (y vergüenza) por tus amigos · Feliz cum. Ni un apice de esfurzo fue puesto en esta pagina</footer>
+</main>
+
+<script>
+  const d = Math.max(0, Math.floor((new Date() - new Date(2026, 10, 7)) / 864e5));
+  document.getElementById('days').textContent = d;
+
+  function boom(){
+    const e = ['🎉','🎂','🎈','🛡️','💀','🔒','🎊'];
+    for(let i=0;i<60;i++){
+      const s=document.createElement('span');
+      s.className='conf';
+      s.textContent=e[Math.floor(Math.random()*e.length)];
+      s.style.left=Math.random()*100+'vw';
+      s.style.animationDuration=(2+Math.random()*3)+'s';
+      document.body.appendChild(s);
+      setTimeout(()=>s.remove(),5500);
+    }
+  }
+  const msg=document.getElementById('msg');
+  document.getElementById('yes').onclick=()=>{
+    boom();
+    msg.textContent='Gracias, K'+"'"+'Sante de la amistad. Prometemos anotar tu cumple el próximo año. Quizás.';
+  };
+  const run=document.getElementById('run');
+  const lines=['Mala opción.','Intenta otra vez.','Deadlock: este botón no se puede presionar.','Doom.'];
+  let n=0;
+  function dodge(){
+    run.style.position='relative';
+    run.style.left=(Math.random()*160-80)+'px';
+    run.style.top=(Math.random()*60-30)+'px';
+    msg.textContent=lines[n++%lines.length];
+  }
+  run.addEventListener('mouseenter',dodge);
+  run.addEventListener('click',dodge);
+  run.addEventListener('touchstart',e=>{e.preventDefault();dodge()});
+  setTimeout(boom,600);
+</script>
+</body>
+</html>
